@@ -1,1 +1,16 @@
-[]
+- id: '1573256391710'
+  alias: New Automation
+  trigger:
+  - event: sunset
+    platform: sun
+  condition: []
+  action:
+  - service: switch.turn_on
+- id: '1573257439794'
+  alias: New Automation
+  trigger:
+  - at: '10:10:10'
+    platform: time
+  condition: []
+  action:
+  - service: climate.set_fan_mode

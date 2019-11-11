@@ -11,14 +11,19 @@ http:
  # You must set the trusted proxy IP address so that Home Assistant will properly accept connections
  # Set this to your NGINX machine IP, or localhost if hosted on the same machine.
  trusted_proxies: 127.0.0.1
+history:
+    include:
+        entities:
+            - switch.porch_lights
 
 # Text to speech
 tts:
   - platform: google_translate
 
 group: !include groups.yaml
-automation: !include automations.yaml
+automation: !include automation.yaml
 script: !include scripts.yaml
+light: !include lights.yaml
 
 cover:
   - platform: myq
