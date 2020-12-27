@@ -1,7 +1,7 @@
-glias: 'Turn off porch lights at bedtime'
+alias: 'Turn off porch lights at bedtime'
 trigger:
-    - at: '22:30:00'
     platform: time
+    at: '22:30:00'
 action:
-  - service: light.turn_off
+    service: light.turn_off
     entity_id: light.porch_lights

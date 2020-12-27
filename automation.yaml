@@ -1,1 +1,2 @@
 - !include automation/outdoorLights.yaml
+- !include automation/outdoorLights_off.yaml

@@ -9,3 +9,11 @@ switches:
     turn_off:
       service: switch.turn_off
       entity_id: switch.jasco_products_unknown_type_4952_id_3137_switch
+  under_cabinet:
+    value_template: '{{states.switch.jasco_products_unknown_type_4944_id_3237_switch.state}}'
+    turn_on:
+      service: switch.turn_on
+      entity_id: switch.jasco_products_unknown_type_4944_id_3237_switch
+    turn_off:
+      service: switch.turn_off
+      entity_id: switch.jasco_products_unknown_type_4944_id_3237_switch

@@ -2,10 +2,6 @@ alias: 'Turn on porch lights untill bedtime'
 trigger:
   - event: sunset
     platform: sun
-condition:
-  - condition: time
-    after: '06:00:00'
-    before: '22:30:00'
 action:
   - service: light.turn_on
     entity_id: light.porch_lights
